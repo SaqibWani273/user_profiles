@@ -18,6 +18,11 @@ class MyApp extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
+          headline3: TextStyle(
+            color: Colors.black87,
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
           headline6: TextStyle(
             color: Colors.black87,
             fontSize: 18,
@@ -29,7 +34,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Center(child: Text('Random User Profiles ')),
         ),
-        body: UserProfileWidget(context),
+        body: UserProfileWidget(),
       ),
       debugShowCheckedModeBanner: false,
     );

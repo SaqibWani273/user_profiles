@@ -2,18 +2,16 @@ import 'package:flutter/material.dart';
 import 'user_data_list.dart';
 
 class TopListTileWidget extends StatelessWidget {
-  int index;
-  TopListTileWidget(this.index, {Key? key}) : super(key: key);
+  final int index;
+  const TopListTileWidget(this.index, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Container(
-        child: CircleAvatar(
-          // fit: BoxFit.cover,
-          backgroundImage: NetworkImage(
-            userDataList[index]["image"].toString(),
-          ),
+      leading: CircleAvatar(
+        // fit: BoxFit.cover,
+        backgroundImage: NetworkImage(
+          userDataList[index]["image"].toString(),
         ),
       ),
       subtitle: Row(children: [
@@ -40,7 +38,7 @@ class TopListTileWidget extends StatelessWidget {
           ),
         ],
       ),
-      trailing: Icon(Icons.more_vert),
+      trailing: const Icon(Icons.more_vert),
     );
   }
 }
