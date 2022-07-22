@@ -1,16 +1,21 @@
 # calculator
 
-A new Flutter project.
+##        Static User Profiles like Facebook
 
-## Getting Started
+#  Created this app  for practice while learning flutter
+  
+This app contains some random user profiles (upto 30 users)
+with data dowloaded from randomuser.me in json format
 
-This project is a starting point for a Flutter application.
+![](assets/screenshot1.png)
 
-A few resources to get you started if this is your first Flutter project:
+![](assets/screenshot2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![](assets/screenshot3.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](assets/screenshot4.png)
+
+![](assets/screenshot5.png)
+
+![](assets/screenshot6.png)
+

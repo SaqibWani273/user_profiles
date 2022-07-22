@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                   child: Column(
                     children: [
                       TopListTileWidget(index),
-                      MainUserImages(randomUserIndex, bgImage),
+                      MainUserImages(index, bgImage),
                       const Divider(
                         color: Colors.grey,
                       ),
