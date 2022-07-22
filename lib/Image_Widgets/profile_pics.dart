@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user_data_list.dart';
+import '../user_data_list.dart';
 
 class MainUserImages extends StatelessWidget {
   final int index;
@@ -14,7 +14,7 @@ class MainUserImages extends StatelessWidget {
         Container(
           height: 500,
           alignment: Alignment.topCenter,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: 300,
             child: FittedBox(

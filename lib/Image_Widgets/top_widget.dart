@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user_data_list.dart';
+import '../user_data_list.dart';
 
 class TopListTileWidget extends StatelessWidget {
   final int index;
@@ -9,17 +9,11 @@ class TopListTileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        // fit: BoxFit.cover,
         backgroundImage: NetworkImage(
           userDataList[index]["image"].toString(),
         ),
       ),
-      subtitle: Row(children: [
-        Text(
-            '${userDataList[index]["date"]} at ${userDataList[index]["time"]}'),
-      ]),
       title: Row(
-        //   mainAxisAlignment: MainAxisAlignment.start,
         children: [
           FittedBox(
             fit: BoxFit.scaleDown,
@@ -38,6 +32,8 @@ class TopListTileWidget extends StatelessWidget {
           ),
         ],
       ),
+      subtitle: Text(
+          '${userDataList[index]["date"]} at ${userDataList[index]["time"]}'),
       trailing: const Icon(Icons.more_vert),
     );
   }
